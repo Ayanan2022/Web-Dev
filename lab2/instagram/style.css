@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: black;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start; 
+}
+
+.left_side{
+    background-color: black;
+    width: 868px;
+    height: 792px;
+
+    position: relative;
+
+    border-right: 2px solid rgba(93, 108, 123, 1);
+    border-bottom: 1px solid rgba(93, 108, 123, 1);
+
+    flex: 0 0 868px;
+}
+
+.left_side .logo{
+    width: 82px;
+    height: 82px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.text{
+    width: 700px;
+    height: 300px;
+    margin-left: 90px;
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.text .txt {
+    font-size: 42px;
+    font-family: "Instagram Sans Regular";
+}
+
+.text .txt .gradient{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.left_side .hh{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 110px;
+    bottom: -20px;
+}
+
+.right-side{
+    width: 644px;
+    height: 792px;
+    float: right;
+    background-color: #151f25;
+
+    border-bottom: 1px solid rgba(93, 108, 123, 1);
+
+    flex: 1;
+}
+
+
+.right-side .form{
+    width: 526px;
+    height: 506px;
+
+    margin-left: 48px;
+    margin-top: 150px;
+}
+
+.right-side .form input{
+    height: 60px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin: 4px 0;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    border: 1px solid rgba(93, 108, 123, 1); 
+    background-color: #1c2b33;
+}
+
+.right-side .form .login-text{
+    padding-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color:white;
+
+    font-weight: 500;
+
+}
+
+.right-side .form .login{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin: 4px 0;
+
+    margin-top: 20px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+    background-color: #3B5998;
+    border-color: #3B5998;
+    color: white;
+
+    border: none;       
+    outline: none;     
+    box-shadow: none;
+
+}
+
+.right-side .form .forgot-password{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin: 4px 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+    color: white;
+    border: 1px solid #151f25; 
+    background-color: #151f25;
+}
+
+.right-side .form .forgot-password:hover{
+    background-color: #3D4F5C;
+    cursor: pointer;
+}
+
+.right-side .form .facebook{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin: 4px 0;
+
+    margin-top: 40px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+    border: 1px solid rgba(93, 108, 123, 1);  
+    background-color: #151f25; 
+    color: white; 
+    box-shadow: none; 
+    outline: none;
+
+}
+
+.right-side .form .facebook:hover{
+    background-color: #3D4F5C;
+    cursor: pointer;
+}
+
+.right-side .form .create{
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin: 4px 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(69,153,255);
+
+    border: 1px solid rgba(93, 108, 123, 1); 
+    background-color: #151f25;
+}
+
+.right-side .form .create:hover{
+    background-color: #3D4F5C;
+    cursor: pointer;
+}
+
+.right-side .form .gg{
+    padding-left: 238px;
+    padding-top: 15px;
+
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color:white;
+}
+
+.footer{
+    background-color: black;
+    height: 150px;
+}
+
+.footer .footer-languages{
+     width: 80%;
+     text-align: center;
+     margin-left: 150px;
+     margin-top: 20px;
+}
+
+.footer .footer-languages a{
+    color: #A8A8A8;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 5px;
+    line-height: 1.6;
+}
+
+.footer .footer-languages a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer p{
+    color: #A8A8A8;
+    margin-left: 670px;
+    margin-top: 10px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
