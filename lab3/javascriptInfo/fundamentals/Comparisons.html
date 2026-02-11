@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comparisons</title>
+    </head>
+
+    <body>
+        <script>
+            //sring comparison
+            alert( 'Z' > 'A' ); // true
+            alert( 'Glow' > 'Glee' ); // true
+            alert( 'Bee' > 'Be' ); // true
+
+            //comparison of different types
+            alert( '2' > 1 ); // true, string '2' becomes a number 2
+            alert( '01' == 1 ); // true, string '01' becomes a number 1
+            alert( true == 1 ); // true, boolean true becomes a number 1
+            alert( false == 0 ); // true, boolean false becomes a number 0
+            alert( null > 0 ); // false
+            alert( null == 0 ); // false
+            alert( null >= 0 ); // true     
+
+            //strict equality
+            alert( 0 === false ); // false, different types
+            alert( '' === false ); // false, different types
+            alert( 0 === 0 ); // true, same type and value
+            alert( '' === '' ); // true, same type and value    
+            alert( null === null ); // true, same type and value
+            alert( undefined === undefined ); // true, same type and value
+            alert( NaN === NaN ); // false, special case    
+            alert( Object.is(NaN, NaN) ); // true, correct way to compare NaN
+
+            //null and undefined
+            alert( null === undefined ); // false
+            alert( null == undefined ); // true, equal in non-strict comparison 
+            
+        </script>
+    </body>
+</html>

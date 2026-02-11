@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Types</title>
+    </head>
+
+    <body>
+        <script>
+            //numbers
+            let message = "hello";
+            message = 123456;
+            
+            //The number type represents both integer and floating point numbers.
+            let n = 123;
+            n = 12.345; 
+
+            alert( 1 / 0 ); // Infinity
+            alert( Infinity ); // Infinity
+            alert( "not a number" / 2 ); // NaN, such division is erroneous
+
+            //BigInt
+            // the "n" at the end means it's a BigInt
+            const bigInt = 1234567890123456789012345678901234567890n;
+
+            //strings
+            let str = "Hello";
+            let str2 = 'Single quotes are ok too';
+            let phrase = `can embed another ${str}`;
+
+            let name = "John";
+
+            // embed a variable
+            alert( `Hello, ${name}!` ); // Hello, John!
+
+            // embed an expression
+            alert( `the result is ${1 + 2}` ); // the result is 3
+
+            let nameFieldChecked = true; // yes, name field is checked
+            let ageFieldChecked = false; // no, age field is not checked
+
+            let isGreater = 4 > 1;
+            alert( isGreater ); // true (the comparison result is "yes")
+
+            //null
+            let age = null;
+            alert(age); // null
+
+            //undefined
+            let undef;
+            alert(undef); // undefined
+
+            //object
+            let user = {
+                name: "John",
+                age: 30
+            };
+            alert(user.name); // John
+
+            //symbol
+            let id = Symbol("id");
+            alert(id); // Symbol(id)
+
+            //typeof operator
+            alert( typeof undefined ); // "undefined"
+            alert( typeof 0 ); // "number"
+            alert( typeof 10n ); // "bigint"
+            alert( typeof true ); // "boolean"
+            alert( typeof "foo" ); // "string"
+            alert( typeof Symbol("id") ); // "symbol"
+            alert( typeof Math ); // "object" (1)
+            alert( typeof null ); // "object" (2)
+
+    
+        </script>
+    </body>
+</html>

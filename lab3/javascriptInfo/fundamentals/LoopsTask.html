@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops Task</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            //Task 1
+            let i = 3;
+            while (i) {
+            alert( i-- );
+            } // the last alert shows 1, then i becomes 0 and the condition becomes falsy, so the loop stops.
+
+            //Task 2
+            let j = 0;
+            while (++j < 5) alert( j ); // shows 1, then 2, then 3, then 4
+
+            let d = 0;
+            while (d++ < 5) alert( d ); // shows 1, then 2, then 3, then 4, then 5
+
+            //Task 3
+            for (let s = 0; s < 5; s++) alert( s ); // shows 0, then 1, then 2, then 3, then 4
+
+            for (let e = 0; e < 5; ++i) alert( e ); // shows 0, then 1, then 2, then 3, then 4
+
+            //Task 4
+            for (let g = 2; g <= 10; g++) {
+            if (g % 2 == 0) {
+                alert( g );
+            }
+            } // shows 2, then 4, then 6, then 8, then 10
+
+            //Task 5
+            let h = 0;
+            while (h < 3) {
+            alert( `number ${h}!` );
+            h++;
+            } // shows "number 0!", then "number 1!", then "number 2!"
+
+            //Task 6
+            let n;
+            do {
+            n = prompt("Enter a number greater than 100?", 0);
+            } while (n <= 100 && n); // keeps asking until the visitor enters a number greater than 100 or cancels the input (n becomes null, which is falsy)       
+
+            //Task 7
+            let num = 10;
+            for (let i = 2; i <= num; i++) {            
+            let isPrime = true;
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                isPrime = false;
+                break;
+                }
+            }
+            if (isPrime) {
+                alert( i );
+            }
+            } // shows 2, then 3, then 5, then 7
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            function showMessage() {
+                alert("Hello, World!");
+            }
+            showMessage();
+
+            //local variable
+            function showMessage() {
+                let message = "Hello, World!";
+                alert(message);
+            }
+            showMessage();
+            alert(message); // Error: message is not defined
+
+            //outer variable
+            let userName = "John";  
+            function showMessage() {
+                let message = "Hello, " + userName;
+                alert(message);
+            }
+            showMessage();
+
+            //parameters
+            function showMessage(from, text) {
+                alert(from + ": " + text);
+            }
+            showMessage("Ann", "Hello!"); // Ann: Hello!
+            showMessage("Ann", "What's up?"); // Ann: What's up?
+
+            //default value
+            function showMessage(from, text = "no text given") {
+                alert(from + ": " + text);
+            }
+            showMessage("Ann"); // Ann: no text given
+            showMessage("Ann", "Hello!"); // Ann: Hello!
+
+            //returning a value
+            function sum(a, b) {
+                return a + b;
+            }
+            let result = sum(1, 2);
+            alert(result); // 3
+
+            //function declaration vs function expression
+            //function declaration
+            function sum(a, b) {
+                return a + b;
+            }
+            //function expression
+            let sum = function(a, b) {
+                return a + b;
+            };  
+
+            //arrow function
+            let sum = (a, b) => a + b;  
+        </script>
+    </body>
+</html>

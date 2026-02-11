@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Operators Task</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            let a = 1, b = 1;
+
+            let c = ++a; // 2
+            let d = b++; // 1
+
+            alert(c); // 2
+            alert(d); // 1
+            alert(a); // 2
+            alert(b); // 2
+
+            //task2
+            let f = 2;
+
+            let x = 1 + (f *= 2);
+            alert(x); // 5
+
+            //task3
+            alert("" + 1 + 0) // "10"
+            alert("" - 1 + 0) // -1
+            alert(true + false) // 1
+            alert(6 / "3") // 2
+            alert("2" * "3") // 6
+            alert(4 + 5 + "px") // "9px"
+            alert("$" + 4 + 5) // "$45"
+            alert("4" - 2) //2
+            alert("4px" - 2) // NaN
+            alert("  -9  " + 5) // "  -9  5"
+            alert("  -9  " - 5) // -14
+            alert(null + 1) // 1
+            alert(undefined + 1) // NaN
+            alert(" \t \n" - 2) // -2
+
+            //task4
+            let t1 = prompt("First number?", 1);
+            let t2 = prompt("Second number?", 2);
+
+            alert(Number(t1) + Number(t2)); // 3
+        </script>
+    </body>
+</html>
