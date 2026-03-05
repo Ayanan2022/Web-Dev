@@ -1,0 +1,18 @@
+<div class="card">
+  <h2>{{ movie.title }} ({{ movie.year }})</h2>
+
+  <p>Votes: {{ movie.votes }}</p>
+
+  <span *ngIf="movie.isWatched; else notWatched">
+    ✅ Watched
+  </span>
+
+  <ng-template #notWatched>
+    ❌ Not Watched
+  </ng-template>
+
+  <br><br>
+
+  <button (click)="upvote()">👍 Upvote</button>
+  <button (click)="remove()">❌ Remove</button>
+</div>
