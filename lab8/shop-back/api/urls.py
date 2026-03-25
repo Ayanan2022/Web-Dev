@@ -1,10 +1,16 @@
 from django.urls import path
-from . import views
+from .views import (
+    products_list,
+    product_detail,
+    categories_list,
+    category_detail,
+    category_products
+)
 
 urlpatterns = [
-    path('products/', views.product_list),
-    path('products/<int:id>/', views.product_detail),
-    path('categories/', views.category_list),
-    path('categories/<int:id>/', views.category_detail),
-    path('categories/<int:id>/products/', views.category_products),
+    path('products/', products_list),
+    path('products/<int:id>/', product_detail),
+    path('categories/', categories_list),
+    path('categories/<int:id>/', category_detail),
+    path('categories/<int:id>/products/', category_products),
 ]
